@@ -50,6 +50,12 @@ var controller = (function(budgetCtrl, UICtrl) {
 
     };
 
-   
+   return {
+       init: function () {
+           setupEventListeners()
+       }
+   };
 
 })(budgetController, UIController); 
+
+controller.init();
